@@ -5,6 +5,8 @@ It creates an interactive mapping between your source code and the generated ass
 
 👉 [Install from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=skt1803.live-asm)
 
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/skt1803.live-asm?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=skt1803.live-asm)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/skt1803.live-asm)](https://marketplace.visualstudio.com/items?itemName=skt1803.live-asm)
 ---
 
 ## ✨ Features
