@@ -1,0 +1,14 @@
+# Ignore source web app (React code) – only include compiled dist
+web/**
+node_modules/**
+.vscode/**
+.git/**
+.gitignore
+.vscodeignore
+
+# Local build artifacts
+*.log
+*.tmp
+
+# Optional: exclude test files if you add later
+test/**

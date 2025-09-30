@@ -1,0 +1,84 @@
+{
+  "name": "live-asm",
+  "displayName": "Live ASM: C/C++",
+  "description": "Live Assembly view for C/C++: Intel/AT&T syntax, -O0..-O3 optimizations, filters, and source line highlighting.",
+  "version": "0.1.0",
+  "publisher": "skt1803",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages"
+  ],
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SKT1803/live-assembly-extension.git"
+  },
+  "license": "MIT",
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onCommand:liveAsm.open"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "liveAsm.open",
+        "title": "Live ASM: Open Panel"
+      }
+    ],
+    "configuration": {
+      "title": "Live ASM",
+      "properties": {
+        "liveAsm.compilerPath": {
+          "type": "string",
+          "default": "gcc",
+          "description": "Path to compiler (gcc/g++/clang/clang++/cl/clang-cl). For C++ we auto-switch to g++/clang++ unless this is cl/clang-cl."
+        },
+        "liveAsm.extraArgs": {
+          "type": "string",
+          "default": "",
+          "description": "Extra compiler args (e.g. -Iinclude -DDEBUG or /Iinclude /DDEBUG)."
+        },
+        "liveAsm.debounceMs": {
+          "type": "number",
+          "default": 500,
+          "description": "Typing debounce before rebuild (ms)."
+        }
+      }
+    },
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "liveAsm.open",
+          "when": "editorLangId == c || editorLangId == cpp",
+          "group": "navigation"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "liveAsm.open",
+          "when": "editorLangId == c || editorLangId == cpp",
+          "group": "navigation"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "liveAsm.open",
+        "key": "ctrl+alt+a",
+        "when": "editorTextFocus && (editorLangId == c || editorLangId == cpp)"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "compile": "echo \"no build step (plain JS)\""
+  },
+  "devDependencies": {
+    "vsce": "^3.0.0"
+  },
+  "dependencies": {}
+}
