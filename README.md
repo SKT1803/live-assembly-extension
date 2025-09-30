@@ -54,7 +54,7 @@ Run in VS Code development mode:
 
 - Open any C/C++ source file.
 
-- Press Ctrl+Alt+A or run command:
+- Press **Ctrl+Alt+A**  or open **Command Palette** (`Ctrl+Shift+P`) → search for:
 ```powershell
 Live ASM: Open Panel
 ```
@@ -75,10 +75,18 @@ Add compiler settings to your `settings.json`:
 
 - **compilerPath** → path to GCC/Clang compiler.
 - **extraArgs** → optional extra arguments passed to the compiler (default: none).
-- 
 ---
 
 ## 📷 Screenshots
+
+<table>
+  <tr>
+    <td><img src="images/1.png" width="1000"></td>
+  </tr>
+    <tr>
+    <td><img src="images/2.png" width="1000"></td>
+  </tr>
+</table>
 
 ---
 ## License
