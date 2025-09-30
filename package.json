@@ -2,7 +2,7 @@
   "name": "live-asm",
   "displayName": "Live ASM: C/C++",
   "description": "Live Assembly view for C/C++: Intel/AT&T syntax, -O0..-O3 optimizations, filters, and source line highlighting.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "skt1803",
   "engines": {
     "vscode": "^1.85.0"
