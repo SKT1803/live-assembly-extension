@@ -1,4 +1,7 @@
+
+
 # Live Assembly Extension
+<img src="./images/icon.png" alt="live asm logo" width="215" align="right"/> 
 
 A Visual Studio Code extension that shows **live assembly output** while you code in C/C++.  
 It creates an interactive mapping between your source code and the generated assembly, making **learning and debugging easier**.
@@ -6,7 +9,11 @@ It creates an interactive mapping between your source code and the generated ass
 👉 [Install from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=skt1803.live-asm)
 
 [![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/skt1803.live-asm?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=skt1803.live-asm)
+<br>
 [![Installs](https://img.shields.io/visual-studio-marketplace/i/skt1803.live-asm)](https://marketplace.visualstudio.com/items?itemName=skt1803.live-asm)
+
+<br clear="right">
+ 
 ---
 
 ## ✨ Features
@@ -81,12 +88,19 @@ Add compiler settings to your `settings.json`:
 
 ## 📷 Screenshots
 
+### C example:
 <table>
   <tr>
-    <td><img src="images/1.png" width="1000"></td>
+    <td><img src="images/1.png" width="500"></td>
+    <td><img src="images/2.png" width="500"></td>
   </tr>
-    <tr>
-    <td><img src="images/2.png" width="1000"></td>
+</table>
+
+### C++ example:
+<table>
+  <tr>
+    <td><img src="images/3.png" width="500"></td>
+    <td><img src="images/4.png" width="500"></td>
   </tr>
 </table>
 
