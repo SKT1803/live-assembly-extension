@@ -52,7 +52,6 @@
       "commandPalette": [
         {
           "command": "liveAsm.open",
-          "when": "editorLangId == c || editorLangId == cpp",
           "group": "navigation"
         }
       ],
