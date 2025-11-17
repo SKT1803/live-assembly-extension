@@ -11,7 +11,7 @@
     "Other",
     "Programming Languages"
   ],
-  "icon": "icon.png",
+  "icon": "icon-r.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/SKT1803/live-assembly-extension.git"
